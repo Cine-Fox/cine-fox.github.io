@@ -4,6 +4,8 @@ Use External SSD with USB 3.0 in Pi5
 
 ## Overview
 
+![ssd](/external_ssd.png)
+
 External SSD is also a common storage way, like Samsung T5, T7. It can be easily removed and plugged into a computer to edit your files. However, after [Csaba Nagy](https://github.com/schoolpost) test, the read and write speed of USB3.0 is limited on Pi5. Here are his original words in Discord:
 
 > In general I would recommend the CFE HAT if you want to do above 30p or the 16-bit mode ( which is limited to 25p ) as those can easily exceed 400MB/s +
