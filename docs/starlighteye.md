@@ -32,7 +32,9 @@ dtoverlay=imx585
 ```
 
 ### Step 2: Recompile driver
-Initially, the default imx585 driver of current pre-release **cinepi-sdk** is not made for StarlightEye, so the i2c address needs to be changed and recompiled. You can use the following two methods to complete it 👇
+Initially, the default imx585 driver of current pre-release **cinepi-sdk** is not made for StarlightEye, so the i2c address needs to be changed and recompiled. 
+
+You can use the following two ways to complete it 👇
 
 ----
 #### Use git pull
