@@ -22,7 +22,7 @@ This is probably the most important issue for you. Will Whang may occasionally c
 
 ## Usage
 
-### Modify dtoverlay
+### Step 1: Modify dtoverlay
 you will need to modify the `config.txt` found in the boot partition after you are flashing your [cinepi-sdk](/software.html#install-cine-fox).
 
 ```shell
@@ -31,8 +31,8 @@ camera_auto_detect=0
 dtoverlay=imx585
 ```
 
-### Recompile driver
-Initially, the default imx585 driver of current pre-release **cinepi-sdk** is not made for StarlightEye, so the i2c address needs to be changed and recompiled
+### Step 2: Recompile driver
+Initially, the default imx585 driver of current pre-release **cinepi-sdk** is not made for StarlightEye, so the i2c address needs to be changed and recompiled. You can use the following two methods to complete it 👇
 
 ----
 #### Use git pull
