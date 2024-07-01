@@ -64,7 +64,7 @@ export default defineConfig({
                                 collapsed: true,
                                 items: [
                                     {
-                                        text: 'RPI5-CFE-Hat',
+                                        text: 'RPI5 CFE Hat',
                                         link: '/cfehat',
                                         collapsed: true,
                                         items: [
@@ -75,7 +75,11 @@ export default defineConfig({
                                         ]
                                     },
                                     {
-                                        text: 'NVME Storage',
+                                        text: 'External SSD',
+                                        link: '/external_ssd',
+                                    },
+                                    {
+                                        text: 'NVMe SSD Hat',
                                         link: '/nvme',
                                     },
                                 ]
