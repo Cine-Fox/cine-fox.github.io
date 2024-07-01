@@ -18,7 +18,7 @@ This is probably the most important issue for you. Will Whang may occasionally c
 
 ![pcb](/imx585_pcb.jpg)
 
-*This is the preview image when I commissioned JLCPCB to make it 👆*
+*This is the preview image when I commissioned JLCPCB to make it. 👆*
 
 ## Usage
 
