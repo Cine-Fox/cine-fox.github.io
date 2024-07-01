@@ -1,5 +1,7 @@
 # What is Cine Fox?
 
+Introduction of Cine Fox.
+
 ## Overview
 
 Cine Fox is an application built on cinepi-sdk, which allows users to make DIY movie cameras faster. Users only need a few cables to make them easy to use. The operation method mainly relies on your mobile phone. 

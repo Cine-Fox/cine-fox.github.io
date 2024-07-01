@@ -53,6 +53,10 @@ export default defineConfig({
                                         text: 'OneInchEye',
                                         link: '/oneincheye',
                                     },
+                                    {
+                                        text:'Raspberry Pi HQ Camera',
+                                        link:'hq_camera'
+                                    }
                                 ]
                             },
                             {
@@ -62,6 +66,13 @@ export default defineConfig({
                                     {
                                         text: 'RPI5-CFE-Hat',
                                         link: '/cfehat',
+                                        collapsed: true,
+                                        items: [
+                                            {
+                                                text: 'DIY CFE-TypeB Card',
+                                                link: '/cfe_card',
+                                            }
+                                        ]
                                     },
                                     {
                                         text: 'NVME Storage',

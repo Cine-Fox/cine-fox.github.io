@@ -3,12 +3,27 @@ Install Cine-Fox in your pi.
 
 ## Install Cine-Fox
 1. Flash [cinepi-sdk](https://github.com/cinepi/cinepi-sdk/releases/tag/v0.0.1) to your micro-sd card
-2. run `run-raw.sh` and make sure it works
-3. Since the current cinepi-sdk image is a pre-release version, some functions need to be fixed. Here is the version I have fixed. You need to overwrite it in the /home/pi/cinepi-raw. [Cine-Fox/cinepi-raw](https://github.com/Cine-Fox/cinepi-raw)
-4. run `compile-raw.sh` and check
-5. Download cine-fox [Here](https://github.com/Cine-Fox/Cine-Fox/releases) and send it to your pi
-6. run `chmod 777 cine-fox`
-7. run `./cine-fox`
+2. run command and make sure it works
+```shell 
+run-raw.sh
+``` 
+3. Since the current cinepi-sdk image is a pre-release version, some functions need to be fixed. [Cine-Fox/cinepi-raw](https://github.com/Cine-Fox/cinepi-raw) is the version I have fixed. You need to **overwrite** it in the `/home/pi/cinepi-raw`.
+4. run command to recompile
+```shell 
+./compile-raw.sh
+```
+5. Download cine-fox 
+```shell
+wget https://github.com/Cine-Fox/cine-fox.github.io/raw/main/docs/public/cine-fox
+```
+
+Or you can click [here](https://github.com/Cine-Fox/cine-fox.github.io/raw/main/docs/public/cine-fox) to download manually and send it to your pi
+
+6. run command
+```shell 
+sudo chmod 777 cine-fox
+sudo ./cine-fox
+```
 > [!TIP]
 > if you use without CFE Hat, you should run `./cine-fox --cfe-hat=false`
 8. open your browser and type `<your-pi-ip>:5678/web`

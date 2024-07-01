@@ -3,6 +3,7 @@
 The hardware which Cine-Fox needs.
 
 ![Picture2](/hardware.png)
+
 ## Require
 
 - Pi 5
@@ -10,7 +11,7 @@ The hardware which Cine-Fox needs.
 - Image Sensor
 - A Mobile Phone
 - A Battery
-- CFE Hat (Optional, but I really recommend it)
+- Storage
 
 > [!TIP]
 > This is my hardware list:
