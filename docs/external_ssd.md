@@ -12,6 +12,8 @@ External SSD is also a common storage way, like Samsung T5, T7. It can be easily
 
 Therefore, if it is not used for high FPS and high-quality shooting, then External SSD can meet the requirements. Otherwise, [RPI5-CFE-Hat](/cfehat) is still recommended.
 
+I used to use this way, but I stopped using it after I switched to [StarlightEyes](/starlighteye).
+
 ## Usage
 
 1. Flash image, you can do [this step](/software.html#install-cine-fox) first.
