@@ -10,7 +10,7 @@ Install Cine Fox on your Pi. After installation, you can use USB network tetheri
 For Android users, I recommend installing [Android App](/android), which can directly open the WebUI, saving the time of opening the browser and entering the URL.
 
 ## Install Cine-Fox
-1. Flash [cinepi-sdk](https://github.com/cinepi/cinepi-sdk/releases/tag/v0.0.1) to your micro-sd card
+1. Download and unzip [cinepi-sdk-001.zip](https://github.com/cinepi/cinepi-sdk/releases/tag/v0.0.1) to your micro-sd card, and insert the card into the Pi.
 2. run command and make sure it works
 ```shell 
 ./run-raw.sh
