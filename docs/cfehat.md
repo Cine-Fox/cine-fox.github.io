@@ -27,9 +27,10 @@ This is probably the most important issue for you. Will Whang may occasionally c
 
 ![i2c](/cfe_i2c_connect.jpg)
 
+> *Here my FPC cable is connected in reverse, but in order to show the i2c connection, I temporarily blur on the ribbon FPC cable. 👆*
 
-> [!TIP]
-> Then Cine Fox will help you auto mount it to `/media/RAW`, and you can unmount it on WebUI.
+3. Then Cine Fox will help you auto mount it to `/media/RAW`, and you can unmount it on WebUI.
+4. Done!
 
 ## About FPC Cables
 
