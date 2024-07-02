@@ -6,7 +6,7 @@ The hardware which Cine-Fox needs.
 
 ## Require
 
-- SBC
-- Power Management & Battery
-- Image Sensor
-- Storage
+- [SBC](/sbc)
+- [Power Management & Battery](/power_management)
+- [Image Sensor](/image_sensor)
+- [Storage](/storage)
