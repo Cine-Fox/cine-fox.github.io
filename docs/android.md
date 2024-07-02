@@ -2,7 +2,7 @@
 use Cine-Fox WebUI in your Android phone
 
 > [!TIP]
-> Before using the Android App, please make sure that cine-fox is running well on Pi5.
+> Before using the Android App, please make sure that `cine-fox` is running well on Pi5.
 
 ## How to use
 1. `sudo apt install dhcpcd`
