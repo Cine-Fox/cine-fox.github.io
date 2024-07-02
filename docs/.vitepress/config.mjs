@@ -24,7 +24,6 @@ export default defineConfig({
             },
             {
                 text: 'Getting Start',
-                collapsed: false,
                 items: [
                     {
                         text: 'Hardware',
