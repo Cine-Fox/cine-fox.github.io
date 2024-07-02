@@ -34,16 +34,22 @@ export default defineConfig({
                             {
                                 text: "SBC's",
                                 collapsed: true,
+                                link: '/sbc',
                                 items: [
                                     {
-                                        text: 'Raspberry Pi',
+                                        text: 'Raspberry Pi 5',
                                         link: '/pi',
                                     },
                                 ]
                             },
                             {
+                                text: "Power Management",
+                                link: '/power_management',
+                            },
+                            {
                                 text: "Image Sensor",
                                 collapsed: true,
+                                link: '/image_sensor',
                                 items: [
                                     {
                                         text: 'StarlightEye',
@@ -55,13 +61,14 @@ export default defineConfig({
                                     },
                                     {
                                         text:'Raspberry Pi HQ Camera',
-                                        link:'hq_camera'
+                                        link:'/hq_camera'
                                     }
                                 ]
                             },
                             {
                                 text: "Storage",
                                 collapsed: true,
+                                link: '/storage',
                                 items: [
                                     {
                                         text: 'RPI5 CFE Hat',
@@ -107,10 +114,5 @@ export default defineConfig({
             {icon: 'discord', link: 'https://discord.com/invite/Wz9sQU3skC'}
         ],
         lastUpdated: true,
-
-        editLink: {
-            pattern: 'https://github.com/Cine-Fox/cine-fox.github.io/edit/main/docs/:path',
-            text: 'Edit this page on GitHub'
-        }
     }
 })

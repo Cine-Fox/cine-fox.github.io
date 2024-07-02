@@ -5,7 +5,7 @@ Install Cine-Fox in your pi.
 1. Flash [cinepi-sdk](https://github.com/cinepi/cinepi-sdk/releases/tag/v0.0.1) to your micro-sd card
 2. run command and make sure it works
 ```shell 
-run-raw.sh
+./run-raw.sh
 ``` 
 3. Since the current cinepi-sdk image is a pre-release version, some functions need to be fixed. [Cine-Fox/cinepi-raw](https://github.com/Cine-Fox/cinepi-raw) is the version I have fixed. You need to **overwrite** it in the `/home/pi/cinepi-raw`.
 4. run command to recompile
