@@ -1,5 +1,13 @@
 # Software
-Install Cine-Fox in your pi.
+Install Cine-Fox in your Pi5.
+
+## Overview
+
+![soft](/software.jpg)
+
+Install Cine Fox on your Pi. After installation, you can use USB network tethering to access the Cine Fox webUI interface on your mobile phone using a browser. 
+
+For Android users, I recommend installing [Android App](/android), which can achieve more functions.
 
 ## Install Cine-Fox
 1. Flash [cinepi-sdk](https://github.com/cinepi/cinepi-sdk/releases/tag/v0.0.1) to your micro-sd card
