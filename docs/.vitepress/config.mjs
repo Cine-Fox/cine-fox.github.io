@@ -19,7 +19,6 @@ export default defineConfig({
                 text: 'Introduction',
                 items: [
                     {text: 'What is Cine Fox?', link: '/cine-fox'},
-                    {text: 'Version', link: '/version'},
                 ],
             },
             {
@@ -95,6 +94,10 @@ export default defineConfig({
                     {
                         text: 'Software',
                         link: '/software',
+                        collapsed: true,
+                        items: [
+                            {text: 'Version', link: '/version'},
+                        ]
                     },
                     {
                         text: 'Android App',

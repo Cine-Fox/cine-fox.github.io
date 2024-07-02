@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,a1 as r}from"./chunks/framework.vateGHBz.js";const m=JSON.parse(`{"title":"SBC's","description":"","frontmatter":{},"headers":[],"relativePath":"sbc.md","filePath":"sbc.md","lastUpdated":1719905553000}`),s={name:"sbc.md"},i=r("",6),o=[i];function c(l,n,p,_,d,h){return t(),a("div",null,o)}const f=e(s,[["render",c]]);export{m as __pageData,f as default};
