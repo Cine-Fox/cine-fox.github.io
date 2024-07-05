@@ -1,5 +1,8 @@
 # Version
 
+## v2.0.5
+- Support replay record files
+
 ## v2.0.4
 - Support without CFE Hat, but you need to mount it by yourself
 
