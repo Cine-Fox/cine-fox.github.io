@@ -22,7 +22,7 @@ For Android users, I recommend installing [Android App](/android), which can dir
 ```
 5. Download cine-fox 
 ```shell
-wget https://github.com/Cine-Fox/cine-fox.github.io/raw/main/docs/public/cine-fox
+wget https://raw.githubusercontent.com/Cine-Fox/cine-fox.github.io/main/docs/public/cine-fox
 ```
 
 Or you can click [here](https://github.com/Cine-Fox/cine-fox.github.io/raw/main/docs/public/cine-fox) to download manually and send it to your pi
