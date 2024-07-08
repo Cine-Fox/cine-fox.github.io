@@ -3,8 +3,15 @@
 CFE-TypeB card cost-effective solution.
 
 ## Overview
+
 ![card](/card.jpg)
 
-DIY CFE-TypeB card only needs NVMe SSD + Any CFE-TypeB card holder. I use JEYI 2280 card holder + Samsung 970 EVO-Plus 2T to build it, it has extremely fast reading and writing speeds, and has very good heat dissipation effect, but the disadvantage is that the shape is relatively long, which may not be convenient for mini shape. 
+DIY CFE-TypeB card only needs NVMe SSD + Any CFE-TypeB card holder. My two cards were made in
+- JEYI 2280 card adapter + Samsung 970 EVO-Plus 2T 
+- ZITAY 2230 card adapter + WD SN740 
 
-Of course, you can also use NVMe 2230 SSD card to make a more mini DIY CFE-TypeB card, but I haven't made it yet, so I don't have any recommended brands. I may make one in a few weeks.
+They has extremely fast reading and writing speeds, and has very good heat dissipation effect. I recommend the 2230 size, which is easy to carry and will not hinder your shooting when using it. But if you use it for long-term shooting and larger capacity, I recommend the 2280 size.
+
+## How to make it?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7wKL-6GBSw8?si=lHNireKPicTYYE7-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
