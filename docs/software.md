@@ -33,7 +33,7 @@ sudo chmod 777 cine-fox
 sudo ./cine-fox
 ```
 > [!TIP]
-> if you use without CFE Hat, you should run `./cine-fox --cfe-hat=false`
+> if you use without CFE Hat, you should run `sudo ./cine-fox --cfe-hat=false`
 8. open your browser and type `<your-pi-ip>:5678/web`
 9. Done!
 
