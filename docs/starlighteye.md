@@ -34,39 +34,13 @@ dtoverlay=imx585
 ### Step 2: Recompile driver
 Initially, the default imx585 driver of current pre-release **cinepi-sdk** is not made for StarlightEye, so the i2c address needs to be changed and recompiled. 
 
-You can use the following two ways to complete it 👇
-
-----
-#### Use git pull
-you can run this command
+You can use the following way to complete it 👇
 
 ```shell
 cd ~/driver/imx585-v4l2-driver/
 git pull
 ./setup.sh
 ```
-Done!
-
-----
-#### Modify manually
-
-if you can not use git, you can do it manually
-
-```shell
-cd ~/driver/imx585-v4l2-driver/
-```
-modify the overlay
-```shell
-            cam_node: imx585@37 {
-                reg = <0x37>;
-```
-To
-```shell
-            cam_node: imx585@37 {
-                reg = <0x1A>;
-```
-then run `./setup.sh`
-
 Done!
 
 ## Wiki
