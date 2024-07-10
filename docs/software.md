@@ -34,7 +34,7 @@ git remote add cinefox https://github.com/Cine-Fox/cinepi-raw.git
 git remote remove origin
 git remote rename cinefox origin
 git fetch --all
-git reset --hard origin/main
+git reset --hard origin/cinepi-sdk-001
 cd ~
 ```
   
