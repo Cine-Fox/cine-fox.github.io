@@ -22,11 +22,7 @@ For Android users, I recommend installing [Android App](/android), which can dir
 > - On Windows, use `win+R` to enter `cmd` to enter the terminal. enter `ssh pi@cinepi.local` and type `1`.
 > - On MacOS, open the `terminal` tool, enter `ssh pi@cinepi.local` and type `1`.
 
-2. run command and make sure it works
-```shell 
-./run-raw.sh
-``` 
-3. Since the current cinepi-sdk image is a pre-release version, some functions need to be fixed. [Cine-Fox/cinepi-raw](https://github.com/Cine-Fox/cinepi-raw) is the version I have fixed. You need to **overwrite** it.
+2. Since the current cinepi-sdk image is a pre-release version, some functions need to be fixed. [Cine-Fox/cinepi-raw](https://github.com/Cine-Fox/cinepi-raw) is the version I have fixed. You need to **overwrite** it.
 
 ```shell
 cd cinepi-raw
@@ -38,12 +34,12 @@ git reset --hard origin/cinepi-sdk-001
 cd ~
 ```
   
-4. run command to recompile
+3. run command to recompile
 ```shell 
 ./compile-raw.sh
 ```
 
-5. If everything is normal, update `./run-raw.sh`
+4. If everything is normal, update `./run-raw.sh`
 
 ```shell
 sudo nano run-raw.sh
@@ -52,7 +48,7 @@ sudo nano run-raw.sh
 cinepi-raw --post-process-file ~/post-processing.json -n --mode 2028:1520:12:U --width 1280 --height 720 --lores-width 1280 --lores-height 720
 ```
 
-6. run cinepi-raw again
+5. run cinepi-raw again
 ```shell
 ./run-raw.sh
 ```
