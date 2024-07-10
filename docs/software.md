@@ -9,36 +9,71 @@ Install Cine Fox on your Pi. After installation, you can use USB network tetheri
 
 For Android users, I recommend installing [Android App](/android), which can directly open the WebUI, saving the time of opening the browser and entering the URL.
 
-## Install Cine-Fox
-1. Download and unzip [cinepi-sdk-001.zip](https://github.com/cinepi/cinepi-sdk/releases/tag/v0.0.1) to your micro-sd card, and insert the card into the Pi.
+> [!WARNING]
+> The installation process may be a bit troublesome, which requires some patience. In the near future, I will make an `.img` to facilitate direct flashing of cine-fox
+
+## Install Software
+
+### Step1: Prepare cinepi-sdk
+
+1. `unzip` or use software like [Belena Etcher](https://etcher.balena.io/) to flash the [cinepi-sdk-001.zip](https://github.com/cinepi/cinepi-sdk/releases/tag/v0.0.1) directly to a micro-sd card. After plugging in the Raspberry Pi, turn it on and plug in the network cable.
+> [!TIP]
+> The following commands need to be executed using SSH.
+> - On Windows, use `win+R` to enter `cmd` to enter the terminal. enter `ssh pi@cinepi.local` and type `1`.
+> - On MacOS, open the `terminal` tool, enter `ssh pi@cinepi.local` and type `1`.
+
 2. run command and make sure it works
 ```shell 
 ./run-raw.sh
 ``` 
-3. Since the current cinepi-sdk image is a pre-release version, some functions need to be fixed. [Cine-Fox/cinepi-raw](https://github.com/Cine-Fox/cinepi-raw) is the version I have fixed. You need to **overwrite** it in the `/home/pi/cinepi-raw`.
+3. Since the current cinepi-sdk image is a pre-release version, some functions need to be fixed. [Cine-Fox/cinepi-raw](https://github.com/Cine-Fox/cinepi-raw) is the version I have fixed. You need to **overwrite** it.
+
+```shell
+cd cinepi-raw
+git remote add cinefox https://github.com/cinepi/cinepi-raw.git
+git remote remove origin
+git remote rename cinefox origin
+git fetch --all
+git reset --hard origin/main
+cd ~
+```
+  
 4. run command to recompile
 ```shell 
 ./compile-raw.sh
 ```
-5. Download cine-fox 
+
+5. If everything is normal, update `./run-raw.sh`
+
+```shell
+sudo nano run-raw.sh
+
+# and modify the command like this:
+cinepi-raw --post-process-file ~/post-processing.json -n --mode 2028:1520:12:U --width 1280 --height 720 --lores-width 1280 --lores-height 720
+```
+
+6. run cinepi-raw again
+```shell
+./run-raw.sh
+```
+
+### Step2: Install Cine-Fox
+1. Open **another** terminal, and download cine-fox 
 ```shell
 wget https://raw.githubusercontent.com/Cine-Fox/cine-fox.github.io/main/docs/public/cine-fox
 ```
 
 Or you can click [here](https://github.com/Cine-Fox/cine-fox.github.io/raw/main/docs/public/cine-fox) to download manually and send it to your pi
 
-6. run command
+2. run command
 ```shell 
 sudo chmod 777 cine-fox
 sudo ./cine-fox
 ```
 > [!TIP]
 > if you use without CFE Hat, you should run `sudo ./cine-fox --cfe-hat=false`
-8. open your browser and type `<your-pi-ip>:5678/web`
-9. Done!
-
-## Without CFE Hat
-if you use cine-fox without CFE Hat, you need to mount SSD to /media/RAW manually.
+3. open your browser and type `<your-pi-ip>:5678/web`
+4. After testing all functions, you can add a `service` to automatically start cinepi-raw and cine-fox when the Raspberry Pi is boot. 👇
 
 ## Run Cine-Fox when boot
 1. Run command 
@@ -98,3 +133,5 @@ sudo systemctl enable cinepi-raw.service
 ```
 5. reboot
 
+## Without CFE Hat
+if you use cine-fox without CFE Hat, you need to mount SSD to /media/RAW manually.
