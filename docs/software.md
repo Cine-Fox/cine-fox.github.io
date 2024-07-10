@@ -30,7 +30,7 @@ For Android users, I recommend installing [Android App](/android), which can dir
 
 ```shell
 cd cinepi-raw
-git remote add cinefox https://github.com/cinepi/cinepi-raw.git
+git remote add cinefox https://github.com/Cine-Fox/cinepi-raw.git
 git remote remove origin
 git remote rename cinefox origin
 git fetch --all
