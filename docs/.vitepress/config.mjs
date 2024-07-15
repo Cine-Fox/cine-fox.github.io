@@ -109,6 +109,12 @@ export default defineConfig({
                     },
                 ]
             },
+            {
+                text: 'Editing',
+                items: [
+                    {text: 'DaVinci Resolve', link: '/davinci'},
+                ],
+            }
         ],
 
         socialLinks: [
