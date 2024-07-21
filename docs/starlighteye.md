@@ -39,6 +39,7 @@ You can use the following way to complete it 👇
 ```shell
 cd ~/driver/imx585-v4l2-driver/
 git pull
+git checkout kernel_6.1
 ./setup.sh
 ```
 Done!
